@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'master'} stages {
+  agent { label 'main'} stages {
     stage ('test') { steps {
       sh "mvn clean compile test"
       }
